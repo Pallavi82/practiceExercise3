@@ -19,9 +19,9 @@ public class ChessBoard {
             for (int i = 0; i < 8; i++) {
                 for (int j = 0; j < 8; j++) {
                     if ((i + j) % 2 == 0)
-                        System.out.print("WW|");
+                        System.out.print("WW|"); //displays WW(white) whenever the row position plus column position is divisible by 2
                     else
-                        System.out.print("BB|");
+                        System.out.print("BB|"); //displays BB(black) else
                 }
                 System.out.println();
             }

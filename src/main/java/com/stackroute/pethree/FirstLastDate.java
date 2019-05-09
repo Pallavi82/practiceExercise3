@@ -13,14 +13,14 @@ public class FirstLastDate {
         public static void main(String[] args) {
 
             Calendar c = Calendar.getInstance(); //gets default time zone
-            c.set(Calendar.DAY_OF_WEEK, c.getFirstDayOfWeek()+1);
+            c.set(Calendar.DAY_OF_WEEK, c.getFirstDayOfWeek()+1); //gets the week going on according to the default timezone
 
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy"); //format of the date
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy"); //the format in which date will be displayed
 
-            System.out.println(simpleDateFormat.format(c.getTime()));
+            System.out.println(simpleDateFormat.format(c.getTime())); //displays first date
 
-            c.add(Calendar.DATE, 6);
-            System.out.println(simpleDateFormat.format(c.getTime()));
+            c.add(Calendar.DATE, 6); //first date of the week plus 6
+            System.out.println(simpleDateFormat.format(c.getTime())); //displays last date of the week
         }
     }
 

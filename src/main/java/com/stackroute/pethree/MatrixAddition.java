@@ -27,12 +27,12 @@ public class MatrixAddition {
             System.out.print("Input number of columns in the matrix: ");
             int columns = s.nextInt();
 
-            int[][] a = new int[rows][columns];
-            int[][] b = new int[rows][columns];
+            int[][] a = new int[rows][columns]; //double dimensional array for matrix 1
+            int[][] b = new int[rows][columns]; //double dimensional array for matrix 2
 
             System.out.println("Input elements of first matrix: ");
 
-            for (int i = 0; i < rows; i++) {
+            for (int i = 0; i < rows; i++) { //for first matrix
 
                 for (int j = 0; j < columns; j++) {
 
@@ -41,7 +41,7 @@ public class MatrixAddition {
             }
             System.out.println("Input elements of second matrix: ");
 
-            for (int i = 0; i < rows; i++) {
+            for (int i = 0; i < rows; i++) { //for second matrix
 
                 for (int j = 0; j < columns; j++) {
 
@@ -51,7 +51,7 @@ public class MatrixAddition {
 
             int[][] c = new int[rows][columns];
 
-            for (int i = 0; i < rows; i++) {
+            for (int i = 0; i < rows; i++) { //adds the two matrix and keeps values in double dimensional array c
 
                 for (int j = 0; j < columns; j++) {
 
@@ -61,7 +61,7 @@ public class MatrixAddition {
 
             System.out.println("The sum of the two matrices is");
 
-            for (int i = 0; i < rows; i++) {
+            for (int i = 0; i < rows; i++) { //loop to display the added matrix
 
                 for (int j = 0; j < columns; j++) {
 

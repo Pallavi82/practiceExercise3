@@ -21,7 +21,7 @@ public class StudentMarks {
         public static void main(String[] args)
         {
             StudentMarks studentMarks = new StudentMarks();
-            studentMarks.in = new Scanner(System.in);
+            studentMarks.in = new Scanner(System.in); //asks for users value of number of students
 
             System.out.print("Enter the number of students: ");
             int numOfStudents = studentMarks.in.nextInt();
@@ -31,7 +31,7 @@ public class StudentMarks {
 
         private void averageOfGrades(int numOfStudents)
         {
-            if (numOfStudents <= 0) {
+            if (numOfStudents <= 0) { //if number of students less than 0 then invalid input
                 System.out.println("Invalid number of students.");
                 return;
             }
@@ -41,19 +41,19 @@ public class StudentMarks {
             int    i   = 0;
             while (i < numOfStudents)
             {
-                System.out.printf("Enter the grade for student  %1$d:", (i+1));
+                System.out.printf("Enter the grade for student  %1$d:", (i+1)); //entering grades for students respectively
                 int grade = in.nextInt();
 
-                if ((grade >= lowestGrade) && (grade <= highestGrade)) {
+                if ((grade >= lowestGrade) && (grade <= highestGrade)) { //checks if grades is greater than 0 and less than 100
 
                     stuGrades[i] = grade;
-                    sum = sum + grade;
+                    sum = sum + grade;  //adds the grade of the student
                     i++;
                     continue;
                 }
                 System.out.println("Invalid grade, please try again.");
             }
-            System.out.printf("The average is : %1$.2f\n", (sum / numOfStudents));
+            System.out.printf("The average is : %1$.2f\n", (sum / numOfStudents)); //displays the average of the student
         }
 
     }

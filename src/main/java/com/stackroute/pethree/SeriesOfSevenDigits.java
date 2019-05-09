@@ -16,7 +16,7 @@ public class SeriesOfSevenDigits {
     public void checkDigits(int[] input) {
 
         for (int i = 0; i < input.length - 1; i++) {
-            if (Math.abs(input[i] - input[i + 1]) != 1)
+            if (Math.abs(input[i] - input[i + 1]) != 1) //checks if absolute of index i minus absolute of index i+1 is not 1 then displays "not consecutive num"
 
                 System.out.println("Not consecutive numbers");
         }
@@ -33,3 +33,5 @@ public class SeriesOfSevenDigits {
 
     }
 }
+
+//this program will print consecutive numbers because 3,4,5,6,7,8,9 are consecutive numbers
